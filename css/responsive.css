@@ -4,23 +4,40 @@
 
 
 @media (max-width: 1700px) {
+    /*------hero-section----*/
     .hero-section .vertical-logo {
         width: 268px;
     }
+    .hero-section .hero-image-wrapper .dot-texture {
+        right: -71px;
+    }
+    
+    /*------about-section----*/
     .about-section {
         z-index: 2;
     }
+    
+    /*------portfolio-section----*/
     .portfolio-section .container {
         max-width: 1382px;
     }
-    .portfolio-section .portfolio-content-wrapper {
-        padding-right: 70px;
+    .portfolio-section .portfolio-paging-status {
+        right: 325px;
+    }
+    
+    /*------instagram-section----*/
+    .instagram-section .container {
+        max-width: 920px;
+    }
+    .footer-area .contact-section {
+        padding: 40px 0 70px;
     }
     
     
 }/*--end media query 1600-1700px--*/
 
 @media (max-width: 1599px) {
+    /*------hero-section----*/
     .hero-section .hero-image-wrapper {
         max-width: 1080px;
     }
@@ -30,22 +47,62 @@
     .hero-section .vertical-logo {
         width: 230px;
     }
+    
+    /*------skill-section----*/
+    .skill-section .section-title {
+        transform: translateY(-30px);
+    }
+    .skill-section .single-skill h3 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    
+    /*------portfolio-section----*/
     .portfolio-section .container {
         max-width: 1280px;
+    }
+    .portfolio-section .portfolio-paging-status {
+        right: 290px;
     }
     .portfolio-section .shape {
         max-width: 230px;
     }
+    .portfolio-section .portfolio-content-wrapper .slick-arrow {
+        bottom: 0px;
+    }
+    
+    /*------service-section----*/
+    .service-section .container {
+        max-width: 1120px;
+    }
+    .service-section .single-service img.service-img {
+        max-width: 750px;
+    }
+    .skill-section .section-title,
+    .blog-section .section-title,
+    .portfolio-section .section-title,
+    .service-section .section-title {
+        font-size: 80px;
+    }
+    
+    /*------blog-section----*/
     .blog-section .ellipse {
         left: 20px;
-        top: 200px;
         max-width: 440px;
     }
+    
+    .footer-section {
+        padding: 8px 0;
+    }
+    
     
 }/*--end media query 1400-1599px--*/
 
 
 @media (max-width: 1399px) {
+    .header {
+        padding: 30px 30px 0;
+    }
     .menu-wrapper ul.main-menu {
         max-width: 1080px;
     }
@@ -67,6 +124,15 @@
         font-size: 64px;
     }
     
+    
+    /*------hero-section----*/
+    .hero-section .social-icon {
+        bottom: 30px;
+    }
+    .hero-section .social-icon li {
+        display: inline-block;
+        margin-bottom: 0;
+    }
     .hero-section .hero-image-wrapper {
         max-width: 970px;
     }
@@ -74,7 +140,7 @@
         max-width: 380px;
     }
     .hero-section .hero-image-wrapper .dot-texture {
-        right: -76px;
+        display: none;
     }
     .hero-section .vertical-logo {
         width: 210px;
@@ -89,8 +155,12 @@
         width: 100%;
     }
     
+    /*------about-section----*/
+    .about-section .about-content {
+        padding: 30px 6px 30px 30px;
+    }
     .about-section .about-content h5 {
-        max-width: 450px;
+        max-width: 540px;
     }
     .about-section .about-shape {
         max-width: 410px;
@@ -102,19 +172,35 @@
         left: 60px;
     }
     
+    
+    /*------skill-section----*/
     .skill-section .single-skill {
         max-width: 518px;
+        max-width: 518px;
+        margin-bottom: 20px;
+        padding: 7px 16px 6px;
     }
     
+    
+    /*------service-section----*/
+    .service-section .single-service img.service-img {
+        max-width: 670px;
+    }
     .service-section .container {
-        margin: 0 auto;
+        max-width: 1050px;
+    }
+    .service-section .section-title {
+        right: 100px;
     }
     
+    
+    /*------portfolio-section----*/
     .portfolio-section .container {
         max-width: 1140px; 
     }
     .portfolio-section .portfolio-content-wrapper {
         padding-right: 40px;
+        padding-left: 30px;
         width: 45%;
     }
     .portfolio-section .portfolio-img {
@@ -127,14 +213,22 @@
     .portfolio-section .portfolio-content h2 {
         margin-bottom: 12px;
     }
-    .portfolio-section .portfolio-content-wrapper .slick-arrow {
-        bottom: -40px;
+    .portfolio-section .portfolio-content-wrapper .slick-arrow{
+        left: 30px;
+    }
+    .portfolio-section .portfolio-content-wrapper .slick-next {
+        left: 95px;
     }
     .portfolio-section .shape {
         display: none;
     }
+    .portfolio-section .portfolio-paging-status {
+        right: 320px;
+        bottom: 0;
+    }
     
     
+    /*------testimonial-section----*/
     .testimonial-section .single-testimonial h2 {
         font-size: 30px;
         line-height: 44px;
@@ -158,12 +252,36 @@
     }
     
     
+    /*------blog-section----*/
     .blog-section .single-blog .post-title {
         padding: 24px 20px 50px;
     }
     .blog-section .ellipse {
-        left: -60px;
+        left: 10px;
+        top: 90px;
         max-width: 430px;
+    }
+    
+    .instagram-section .container {
+        max-width: 720px;
+    }
+    
+    
+    /*------footer-area----*/
+    .footer-area .contact-section {
+        padding: 0 0 44px;
+    }
+    .contact-section .section-title{
+        margin-bottom: 25px;
+    }
+    .contact-section .contact-form label {
+        display: none;
+    }
+    .footer-section {
+        padding: 10px 0;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
     
     
@@ -173,6 +291,7 @@
         max-width: 510px;
         margin-bottom: 70px;
     }
+    
     
     /*------blog details page-------*/
     .blog-single {
@@ -187,23 +306,15 @@
     
     
     
+    
 }/*--end media query 1200-1399px--*/
 
 /* ================Large Display==============*/
-@media (max-width: 1199px) {
-    .vertical-line.line1 {
-        left: calc(100% / 4);
+@media (max-width: 1199px) {  
+    .fp-tableCell {
+        display: block;
+        height: auto!important;
     }
-    .vertical-line.line2 {
-        left: calc(100% / 4 * 2);
-    }
-    .vertical-line.line3 {
-        left: calc(100% / 4 * 3);
-    }
-    .vertical-line.line4,
-    .vertical-line.line5 {
-        display: none;
-    }    
     
     .menu-wrapper ul.main-menu {
         max-width: 940px;
@@ -212,8 +323,6 @@
         max-width: 940px;
     }
     
-    
-    /*----hero-section style------*/
     .hero-section .content-wrapper {
         padding: 0 15px;
     }
@@ -227,6 +336,10 @@
         width: 240px;
         left: calc(100% / 4);
     }
+    .hero-section .social-icon li {
+        display: block;
+        margin-bottom: 2px;
+    }
     .hero-section .hero-content h1 {
         font-size: 90px;
     }
@@ -237,14 +350,28 @@
     }
     
     
+    .about-section .about-img1 {
+        width: 250px;
+    }
+    .about-section .about-img2 {
+        width: 250px;
+    }
     .about-section .about-content {
-        padding: 84px 6px 85px 60px;
+        padding: 86px 6px 83px 60px;
+        height: auto;
+        width: calc(100% - 500px);
+        max-width: 100%;
+    }
+    .about-section .about-content h5 {
+        max-width: 315px;
     }
     
     
-    /*----skill-section style------*/
     .skill-section {
         padding: 90px 0 140px;
+    }
+    .skill-section .section-title {
+        transform: translateY(0px);
     }
     .skill-section .single-skill {
         max-width: 448px;
@@ -256,6 +383,7 @@
         right: -32px;
         width: 65px;
     }
+    
     .skill-section .single-skill:nth-child(odd) span.circle {
         left: -42px;
     }
@@ -264,34 +392,56 @@
     }
     
     
-    /*----service-section style------*/
     .service-section{
-        padding: 100px 0 80px;
+        padding: 87px 0 57px;
     }
-    .service-section .service-wrapper {
-        margin-left: -10px;
-        padding-right: 10px;
+    .service-section .section-title {
+        right: inherit;
+        position: relative;
+        text-align: center;
+        top: inherit;
     }
-    .service-section .service-wrapper .single-service {
-        padding: 60px 15px 48px;
-        width: calc(100% / 3 - 20px);
-        margin: 0 0 20px 20px;
+    .fp-section.fp-table {
+        display: block;
+        height: auto!important;
+    }
+    .service-section .single-service img.service-img {
+        max-width: 610px;
+    }
+    .service-section .single-service .service-text {
+        width: 450px;
+        padding-right: 15px;
+    }
+    .service-section .service-wrapper .single-service h2 {
+        font-size: 30px;
+        line-height: 1.3;
+    }
+    .service-section .service-wrapper .single-service p {
+        font-size: 20px;
     }
     
     
-    /*----portfolio-section style------*/
     .portfolio-section {
-        padding: 100px 0 106px;
+        padding: 100px 0 98px;
     }
     .portfolio-section .container {
         max-width: 940px;
+        margin: 0 auto;
+    }
+    .portfolio-section .portfolio-wrapper {
+        display: block;
     }
     .portfolio-section .portfolio-content-wrapper {
-        padding-right: 30px;
-        width: 50%;
+        width: 100%;
+        max-width: 500px;
+        padding: 0;
+        margin-top: 30px;
+    }
+    .portfolio-section .portfolio-content {
+        padding-left: 10px;
     }
     .portfolio-section .portfolio-img {
-        width: 50%;
+        width: 100%;
         align-self: flex-start;
     }
     .skill-section .section-title,
@@ -301,21 +451,30 @@
         font-size: 90px;
     }
     .portfolio-section .portfolio-img:before {
-        bottom: -87px;
+        display: none;
     }
     .portfolio-section .portfolio-content h2 {
         font-size: 36px;
         line-height: 44px;
     }
-    
-    .testimonial-section {
-        padding: 100px 0;
+    .portfolio-section .portfolio-content-wrapper .slick-arrow {
+        left: 15px;
+    }
+    .portfolio-section .portfolio-content-wrapper .slick-next {
+        left: 80px;
+    }
+    .portfolio-section .portfolio-paging-status {
+        right: inherit;
+        left: 150px;
     }
     
     
-    /*----blog-section style------*/
+    .testimonial-section {
+        padding: 100px 0 110px;
+    }
+    
     .blog-section {
-        padding: 85px 0 80px;
+        padding: 102px 0 80px;
     }
     .blog-section .section-title {
         margin-right: 70px;
@@ -333,10 +492,11 @@
         margin-bottom: 20px;
     }
     
-    
-    /*----instagram-section style------*/
     .instagram-section {
-        padding: 95px 0 100px;
+        padding: 95px 0 97px;
+    }
+    .instagram-section .container {
+        max-width: 960px;
     }
     .instagram-section .instagram-img-wrapper {
         padding-left: 15px;
@@ -349,9 +509,23 @@
     .contact-section .content-wrapper {
         padding: 0 15px;
     }
+    .contact-section .section-title {
+        margin-bottom: 55px;
+    }
+    .contact-section .contact-form label {
+        display: block;
+    }
+    .footer-section {
+        padding: 20px 0;
+        position: relative;
+        bottom: inherit;
+        width: 100%;
+    }
+    
     .scroll-top {
         bottom: 90px;
     }
+    
     
     
     /*----blog page style------*/
@@ -380,6 +554,7 @@
     }
     
     
+    
 }/*--end media query 992-1199px--*/
 
 
@@ -397,7 +572,6 @@
     }
     
     
-    /*----hero-section style-----*/
     .hero-section .hero-image {
         max-width: 310px;
         background-position: 94% 100%;
@@ -417,8 +591,6 @@
         display: none;
     }
     
-    
-    /*----about-section style-----*/
     .about-section .about-img2 {
         display: none;
     }
@@ -427,7 +599,8 @@
     }
     .about-section .about-content {
         max-width: 480px;
-        padding: 84px 6px 85px 20px;
+        width: 100%;
+        padding: 83px 6px 83px 20px;
     }
     .about-section .about-content h5 {
         max-width: 100%;
@@ -440,10 +613,9 @@
         font-size: 62px;
     }
     
-    
     /*-----skill section----*/
     .skill-section {
-        padding: 93px 0 90px;
+        padding: 90px 0 116px;
     }
     .skill-section .skill-wrapper {
         display: block;
@@ -483,15 +655,49 @@
     }
     
     
-    .service-section .service-wrapper .single-service {
-        width: calc(100% / 2 - 20px);
+    .service-section {
+        padding: 87px 0 98px;
+    }
+    .service-section .container {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+    .service-section .service-wrapper {
+        margin-left: 0;
+    }
+    .service-section .single-service {
+        margin-left: 0;
+    }
+    .service-section .single-service img.service-img {
+        max-width: 100%;
+    }
+    .service-section .service-wrapper .slick-track {
+        padding: 40px 0 80px;
+    }
+    .service-section .service-wrapper .slick-arrow {
+        right: inherit;
+        left: 10px;
+        bottom: 0;
+    }
+    .service-section .service-wrapper .slick-next {
+        left: 70px;
+        right: inherit;
+    }
+    .service-section .single-service .service-text {
+        max-width: 560px;
+        width: 100%;
+        padding-right: 0;
+        position: relative;
+        margin-top: 30px;
+        bottom: inherit;
+    }
+    .service2-paging-status {
+        right: inherit;
+        left: 134px;
+        bottom: 7px;        
     }
     
     
-    /*----portfolio-section style-----*/
-    .portfolio-section {
-        padding: 100px 0 136px;
-    }
     .portfolio-section .container {
         max-width: 720px;
         margin: 0 auto;
@@ -511,10 +717,6 @@
     .portfolio-section .portfolio-img:before {
         display: none;
     }
-    .portfolio-section .portfolio-paging-status {
-        left: 140px;
-        bottom: -35px;
-    }
     
     .contact-section .section-title h2,
     .instagram-section .section-title h2 {
@@ -522,11 +724,18 @@
         font-size: 34px;
         line-height: 44px;
     }
+    .instagram-section .container {
+        max-width: 720px;
+    }
+    
     
     
     /*----blog page style-----*/
     .blog-page {
         padding: 160px 0 80px;
+    }
+    .blog-section .section-title {
+        transform: translateY(0px);
     }
     .blog-page .single-blog:nth-child(even) {
         transform: translateY(90px);
@@ -544,6 +753,7 @@
         padding: 10px 15px;
         font-size: 16px;
     }
+   
     
     
     /*------blog details-------*/
@@ -559,7 +769,8 @@
     .blog-single .comment-respond {
         margin: 60px auto 0;
     }
-   
+    
+    
     
 }/*--end media query 768-991px--*/
 
@@ -607,14 +818,11 @@
     }
     
     
-    .service-section .service-wrapper {
-        margin-left: 0;
-        padding-right: 10px;
-        padding-left: 10px;
+    .service-section .container {
+        max-width: 540px;
     }
-    .service-section .service-wrapper .single-service {
-        width: 100%;
-        margin-left: 0;
+    .service-section .service-wrapper {
+        padding: 0 15px;
     }
     
     
@@ -643,6 +851,11 @@
         margin-left: 0;
     }
     
+    
+    .instagram-section .container {
+        max-width: 540px;
+    }
+    
     .contact-section .content-wrapper {
         display: block;
     }
@@ -660,6 +873,7 @@
         justify-content: center;
         text-align: center;
     }
+  
     
     
     /*-----blog page style------*/
@@ -722,8 +936,6 @@
         padding-left: 0;
     }
     
-  
-    
     
 }/*--end media query 576-767px--*/
 
@@ -784,8 +996,9 @@
         margin-right: auto;
     }
     
+    
     .about-section .about-content {
-        padding: 56px 6px 65px 20px;
+        padding: 57px 6px 60px 20px;
     }
     .about-section .about-content h2 {
         text-align: center;
@@ -799,9 +1012,10 @@
         font-size: 20px;
     }
     
+    
     /*----skill section-----*/
     .skill-section {
-        padding: 63px 0 60px;
+        padding: 62px 0 90px;
     }
     .skill-section .skill-wrapper .vertical-line {
         left: 20px;
@@ -816,7 +1030,7 @@
     }
     .skill-section .single-skill span.rectengle {
         left: -20px;
-        width: 50px;
+        width: 30px;
     }
     .skill-section .single-skill:nth-child(odd) span.circle {
         left: -29px;
@@ -833,14 +1047,11 @@
     
     
     .service-section {
-        padding: 70px 0 50px;
+        padding: 60px 0 70px;
     }
     
     .portfolio-section {
-        padding: 70px 0 87px;
-    }
-    .portfolio-section .portfolio-paging-status {
-        bottom: -15px;
+        padding: 74px 0 90px;
     }
     .portfolio-section .portfolio-content h2 {
         font-size: 30px;
@@ -851,21 +1062,33 @@
     }
     .portfolio-section .portfolio-content-wrapper .slick-arrow {
         bottom: -20px;
-        left: 10px;
+        left: 20px;
     }
     .portfolio-section .portfolio-content-wrapper .slick-next {
-        left: 70px;
+        left: 80px;
+    }
+    .portfolio-section .portfolio-paging-status {
+        right: inherit;
+        left: 145px;
+        bottom: -16px;
     }
     
     .testimonial-section {
-        padding: 70px 0 60px;
+        padding: 70px 0;
     }
     .testimonial-section .author-img-wrapper {
         margin: 20px 0 0 80px;
     }
     
     .blog-section {
-        padding: 52px 0 60px;
+        padding: 62px 0 50px;
+    }
+    .blog-section .section-title {
+        margin: 0;
+        text-align: center;
+    }
+    .blog-section .ellipse {
+        display: none;
     }
     .blog-section .section-title,
     .portfolio-section .section-title,
@@ -880,7 +1103,7 @@
     }
     
     .instagram-section {
-        padding: 66px 0;
+        padding: 70px 0;
     }
     .instagram-section .single-col.sm {
         width: 100%;
